@@ -1,0 +1,108 @@
+﻿Brand Kit — CeeJay Social
+1. Brand Identity
+* Name: CeeJay Social
+* Positioning: High-performance digital marketing for serious businesses
+* Core Message: Built to drive results, not just look good
+
+Slogan: We build high-converting, digital marketing systems
+________________
+
+
+2. Brand Essence
+   * Vibe: Minimal • Clean • Professional • Powerful • High-Performance
+   * Personality: Direct, confident, strategic, no fluff
+________________
+
+
+3. Brand Keywords
+Use consistently across site, copy, and AI prompts:
+   * High Performance
+   * Conversion-Focused
+   * Results-Driven
+   * Minimal
+   * Clean
+   * Professional
+   * Powerful
+   * Scalable
+   * Precise
+   * Modern
+________________
+
+
+4. Color System
+Primary Colors
+   * Deep Purple: #5E287C (authority, premium, intelligence)
+   * Black: #000000 (power, contrast, control)
+   * White: #FFFFFF (clarity, simplicity)
+Signature Gradient
+   * Type: Circular gradient
+   * Position: 50% 50%
+   * Colors: #5E287C → #000000
+👉 Use sparingly for:
+   * Hero glow
+   * CTA emphasis
+   * Section highlights
+________________
+
+
+5. Visual Direction
+   * Minimal, high-contrast design
+   * Strong spacing and layout structure
+   * No clutter or unnecessary elements
+Design Rules
+   * Every element serves conversion
+   * Clean hierarchy > creative complexity
+   * Fast readability is priority
+________________
+
+
+6. Typography Direction
+   * Headlines: Bold, modern sans-serif (strong presence)
+   * Body: Clean, highly readable sans-serif
+👉 AI Prompt Tip:
+“Use a modern, minimal IBM Plex Sans font similar to Inter or Helvetica with strong hierarchy and spacing.”
+________________
+
+
+7. UI & Conversion Style
+Buttons
+   * Clean, bold, direct
+   * Purple or gradient
+   * No fluff language
+Examples:
+   * Get Started
+   * View Strategy
+   * See How It Works
+________________
+
+
+Layout Structure
+   * Straight to the point
+   * Section-based flow
+   * Built for scanning
+Core Sections
+   * Problem
+   * Solution
+   * Proof
+   * Offer
+   * CTA
+________________
+
+
+8. Website AI Prompt
+Use this directly when building:
+“Create a minimal, high-performance website for a digital marketing company called CeeJay Social. Use a black background with deep purple (#5E287C) accents and a subtle circular gradient glow. The design should be clean, simple, and professional with strong spacing and clear hierarchy. Focus on conversion, clarity, and performance. Avoid clutter, unnecessary animations, or decorative elements. The site should feel powerful, modern, and results-driven.”
+________________
+
+
+9. Brand Standard (Non-Negotiables)
+   * Simple > Fancy
+   * Clear > Clever
+   * Performance > Design
+   * Conversion > Creativity
+________________
+
+
+10. Positioning Line
+CeeJay Social
+We build high-converting, digital marketing systems
