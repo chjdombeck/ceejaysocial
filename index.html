@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CeeJay Social | We Build High-Converting Digital Marketing Systems</title>
+  <title>CeeJay Social</title>
+  <link rel="icon" type="image/png" href="CJS Official CloudPurple (1)1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -75,7 +76,7 @@
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
     .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .nav-logo img { width: 72px; height: 72px; object-fit: contain; }
+    .nav-logo img { width: 101px; height: 101px; object-fit: contain; }
     .nav-logo-text { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: #fff; }
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
@@ -116,7 +117,7 @@
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
-      padding: 140px 48px 80px;
+      padding: 200px 48px 80px;
     }
 
     .glow-orb {
@@ -515,6 +516,106 @@
     .testimonial-name { font-size: 14px; font-weight: 600; color: #fff; }
     .testimonial-role { font-size: 12px; color: rgba(255,255,255,0.35); }
 
+    /* ── Founder Section ── */
+    .founder-section { background: #000; }
+    .founder-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 420px 1fr;
+      gap: 96px; align-items: center;
+    }
+    .founder-photo-wrap {
+      position: relative;
+    }
+    .founder-photo {
+      width: 100%; aspect-ratio: 3/4;
+      border-radius: 20px;
+      background: rgba(94,40,124,0.08);
+      border: 1px solid rgba(94,40,124,0.25);
+      overflow: hidden;
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .founder-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .founder-photo-placeholder {
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+    .founder-photo-placeholder svg { width: 48px; height: 48px; opacity: 0.4; }
+    .founder-photo-placeholder span { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; }
+    .founder-photo::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(94,40,124,0.3) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .founder-photo-accent {
+      position: absolute;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(94,40,124,0.4) 0%, transparent 70%);
+      filter: blur(40px);
+      bottom: -40px; right: -40px;
+      pointer-events: none;
+    }
+
+    .founder-right { display: flex; flex-direction: column; gap: 32px; }
+    .founder-name {
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 700; letter-spacing: -0.035em;
+      line-height: 1.05; color: #fff;
+    }
+    .founder-name em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--purple-light), #C47FE8);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .founder-title {
+      font-size: 14px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--purple-light); margin-top: -20px;
+    }
+    .founder-bio {
+      font-size: 17px; line-height: 1.75;
+      color: rgba(255,255,255,0.55);
+      max-width: 520px;
+    }
+    .founder-quote {
+      position: relative;
+      padding: 28px 32px;
+      border-radius: 14px;
+      background: rgba(94,40,124,0.07);
+      border: 1px solid rgba(94,40,124,0.25);
+      border-left: 3px solid var(--purple-light);
+    }
+    .founder-quote-mark {
+      font-size: 56px; line-height: 1;
+      color: var(--purple-light); opacity: 0.4;
+      font-family: Georgia, serif;
+      position: absolute; top: 12px; left: 28px;
+      pointer-events: none;
+    }
+    .founder-quote-text {
+      font-size: 18px; font-weight: 500;
+      line-height: 1.6; letter-spacing: -0.01em;
+      color: rgba(255,255,255,0.85);
+      padding-top: 20px;
+      font-style: italic;
+    }
+    .founder-quote-author {
+      margin-top: 12px;
+      font-size: 13px; color: rgba(255,255,255,0.35);
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 1024px) {
+      .founder-inner { grid-template-columns: 1fr 1fr; gap: 56px; }
+    }
+    @media (max-width: 768px) {
+      .founder-inner { grid-template-columns: 1fr; gap: 40px; }
+      .founder-photo { aspect-ratio: 4/3; }
+    }
+
     /* ── CTA Section ── */
     .cta-section {
       padding: 140px 48px;
@@ -575,7 +676,7 @@
       gap: 64px; margin-bottom: 64px;
     }
     .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-    .footer-logo img { width: 64px; height: 64px; object-fit: contain; }
+    .footer-logo img { width: 128px; height: 128px; object-fit: contain; }
     .footer-logo-text { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: #fff; }
     .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.35); line-height: 1.65; max-width: 280px; }
     .footer-col-title { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
@@ -729,6 +830,7 @@
     <li><a href="#process">Process</a></li>
     <li><a href="#results">Results</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#founder">Founder</a></li>
   </ul>
   <a href="#contact" class="nav-cta">
     Get Started
@@ -747,6 +849,7 @@
   <a href="#process" class="mobile-nav-link">Process</a>
   <a href="#results" class="mobile-nav-link">Results</a>
   <a href="#about" class="mobile-nav-link">About</a>
+  <a href="#founder" class="mobile-nav-link">Founder</a>
   <a href="#contact" class="mobile-cta mobile-nav-link">Get Started</a>
 </div>
 
@@ -1056,6 +1159,49 @@
   </div>
 </section>
 
+<!-- Founder Section -->
+<section class="founder-section" id="founder">
+  <div class="founder-inner">
+
+    <!-- Photo -->
+    <div class="founder-photo-wrap reveal">
+      <div class="founder-photo">
+        <!-- Replace src with your photo path when ready -->
+        <!-- <img src="your-photo.jpg" alt="Founder photo"> -->
+        <div class="founder-photo-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <span>Your photo here</span>
+        </div>
+      </div>
+      <div class="founder-photo-accent"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="founder-right">
+      <div class="section-label reveal">The Founder</div>
+
+      <div>
+        <h2 class="founder-name reveal reveal-delay-1">Your <em>Name</em> Here</h2>
+        <p class="founder-title reveal reveal-delay-1">Founder & Digital Marketing Strategist</p>
+      </div>
+
+      <p class="founder-bio reveal reveal-delay-2">
+        Replace this with your intro. Tell your story — who you are, what you've built, and why you started CeeJay Social. This is your chance to connect with potential clients on a personal level.
+      </p>
+
+      <!-- Philosophy / Quote block -->
+      <div class="founder-quote reveal reveal-delay-3">
+        <span class="founder-quote-mark">"</span>
+        <p class="founder-quote-text">Replace this with your philosophy, a guiding principle, or a few words of wisdom that define how you work and what you stand for.</p>
+        <p class="founder-quote-author">— Your Name, Founder of CeeJay Social</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CTA Section -->
 <section class="cta-section" id="contact">
   <div class="cta-glow"></div>
@@ -1088,7 +1234,7 @@
         <div class="footer-logo">
           <img src="2.png" alt="CeeJay Social">
         </div>
-        <p class="footer-tagline">We build high-converting digital marketing systems for serious businesses.</p>
+        <p class="footer-tagline">We build high-converting digital marketing systems for businesses ready to grow.</p>
       </div>
       <div>
         <div class="footer-col-title">Services</div>
@@ -1104,9 +1250,11 @@
       <div>
         <div class="footer-col-title">Company</div>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#results">Results</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#founder">Founder</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
