@@ -321,8 +321,9 @@
       display: flex; align-items: center; gap: 10px;
     }
     .section-label::before {
-      content: ''; display: block; width: 24px; height: 1px;
-      background: var(--purple-light);
+      content: ''; display: block; width: 8px; height: 8px;
+      border-radius: 50%; border: 1.5px solid var(--purple-light);
+      background: transparent; flex-shrink: 0;
     }
     .section-headline {
       font-size: clamp(32px, 4.5vw, 56px);
@@ -573,7 +574,7 @@
     .founder-title {
       font-size: 14px; font-weight: 500;
       letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--purple-light); margin-top: -20px;
+      color: var(--purple-light); margin-top: 8px;
     }
     .founder-bio {
       font-size: 17px; line-height: 1.75;
@@ -916,15 +917,15 @@
 <!-- Marquee -->
 <div class="marquee-section">
   <div class="marquee-track">
-    <div class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Brand & Content Strategy</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Paid Advertising</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Social Media Content Strategy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Website Design</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Funnel Building</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Automation Systems</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Growth Partnership</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Brand & Content Strategy</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Paid Advertising</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Social Media Content Strategy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Website Design</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Funnel Building</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Automation Systems</div>
     <div class="marquee-item"><span class="marquee-dot"></span>Growth Partnership</div>
@@ -994,7 +995,7 @@
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
         </svg>
       </div>
-      <div class="service-title">Brand Strategy</div>
+      <div class="service-title">Brand & Content Strategy</div>
       <div class="service-desc">Positioning, messaging, and identity built for premium perception so you compete on value, not price.</div>
       <a href="#contact" class="service-link">Learn more <span>→</span></a>
     </div>
@@ -1016,8 +1017,8 @@
           <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <div class="service-title">Social Media Content Strategy</div>
-      <div class="service-desc">Platform-native content that builds audiences, drives engagement, and moves people from followers to customers.</div>
+      <div class="service-title">Website Design</div>
+      <div class="service-desc">Clean, conversion-focused websites built to make a strong first impression, communicate your value clearly, and turn visitors into leads.</div>
       <a href="#contact" class="service-link">Learn more <span>→</span></a>
     </div>
     <div class="service-card reveal">
@@ -1166,14 +1167,7 @@
     <!-- Photo -->
     <div class="founder-photo-wrap reveal">
       <div class="founder-photo">
-        <!-- Replace src with your photo path when ready -->
-        <!-- <img src="your-photo.jpg" alt="Founder photo"> -->
-        <div class="founder-photo-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
-          <span>Your photo here</span>
-        </div>
+        <img src="jacket profpic.JPG" alt="Founder photo">
       </div>
       <div class="founder-photo-accent"></div>
     </div>
@@ -1183,19 +1177,25 @@
       <div class="section-label reveal">The Founder</div>
 
       <div>
-        <h2 class="founder-name reveal reveal-delay-1">Your <em>Name</em> Here</h2>
-        <p class="founder-title reveal reveal-delay-1">Founder & Digital Marketing Strategist</p>
+        <h2 class="founder-name reveal reveal-delay-1">Carter <em>Dombeck</em></h2>
+        <p class="founder-title reveal reveal-delay-1" style="margin-top:10px;">Founder & Digital Marketing Strategist</p>
       </div>
 
       <p class="founder-bio reveal reveal-delay-2">
-        Replace this with your intro. Tell your story — who you are, what you've built, and why you started CeeJay Social. This is your chance to connect with potential clients on a personal level.
+        I got my first digital marketing client in the winter of 2022, and since then, I've been obsessed with building, learning, and helping people make money online.
+      </p>
+      <p class="founder-bio reveal reveal-delay-2">
+        Today in 2026, I run CeeJay Social, I post content on YouTube through my personal brand, and I do coaching for entrepreneurs on the topic of the subconscious mind.
+      </p>
+      <p class="founder-bio reveal reveal-delay-2">
+        At the core of everything I do is this: building real relationships and creating results that matter.
       </p>
 
       <!-- Philosophy / Quote block -->
       <div class="founder-quote reveal reveal-delay-3">
         <span class="founder-quote-mark">"</span>
-        <p class="founder-quote-text">Replace this with your philosophy, a guiding principle, or a few words of wisdom that define how you work and what you stand for.</p>
-        <p class="founder-quote-author">— Your Name, Founder of CeeJay Social</p>
+        <p class="founder-quote-text">Marketing that focuses on genuine service and building real relationships in a digital way.</p>
+        <p class="founder-quote-author">— Carter Dombeck, Founder of CeeJay Social</p>
       </div>
     </div>
 
@@ -1211,18 +1211,14 @@
       Ready to build a system that <em>actually works?</em>
     </h2>
     <p class="cta-sub reveal reveal-delay-2">
-      Drop your email and we'll reach out within 24 hours to discuss your strategy. No sales pitch. Just a real conversation about your growth.
-    </p>
-    <div class="cta-form reveal reveal-delay-3">
-      <input type="email" class="cta-input" placeholder="Enter your email address">
-      <button class="btn-primary" type="submit">
-        Get My Strategy
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      Pick a time that works for you. We'll talk through your goals, your current situation, and what a partnership could look like.    </p>
+    <div class="reveal reveal-delay-3" style="max-width:900px; margin:0 auto; width:100%; border-radius:16px; overflow:hidden; border:1px solid rgba(94,40,124,0.25);">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ceejaydeesocial/30min" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
     </div>
-    <p class="cta-note reveal reveal-delay-4">No commitments. No spam. Just results-focused conversation.</p>
+    <p class="cta-note reveal reveal-delay-4">Free 30-minute call. No commitments.</p>
   </div>
 </section>
 
@@ -1239,9 +1235,9 @@
       <div>
         <div class="footer-col-title">Services</div>
         <ul class="footer-links">
-          <li><a href="#services">Brand Strategy</a></li>
+          <li><a href="#services">Brand & Content Strategy</a></li>
           <li><a href="#services">Paid Advertising</a></li>
-          <li><a href="#services">Social Media Content Strategy</a></li>
+          <li><a href="#services">Website Design</a></li>
           <li><a href="#services">Funnel Building</a></li>
           <li><a href="#services">Automation Systems</a></li>
           <li><a href="#services">Growth Partnership</a></li>
