@@ -537,7 +537,7 @@
     .founder-inner {
       max-width: 1200px; margin: 0 auto;
       display: grid; grid-template-columns: 420px 1fr;
-      gap: 96px; align-items: center;
+      gap: 96px; align-items: start;
     }
     .founder-photo-wrap {
       position: relative;
@@ -575,7 +575,7 @@
       pointer-events: none;
     }
 
-    .founder-right { display: flex; flex-direction: column; gap: 32px; }
+    .founder-right { display: flex; flex-direction: column; gap: 20px; justify-content: flex-start; }
     .founder-name {
       font-size: clamp(36px, 4vw, 52px);
       font-weight: 700; letter-spacing: -0.035em;
@@ -592,13 +592,13 @@
       color: var(--purple-light); margin-top: 8px;
     }
     .founder-bio {
-      font-size: 17px; line-height: 1.75;
+      font-size: 15px; line-height: 1.65;
       color: rgba(255,255,255,0.55);
       max-width: 520px;
     }
     .founder-quote {
       position: relative;
-      padding: 28px 32px;
+      padding: 20px 24px;
       border-radius: 14px;
       background: rgba(94,40,124,0.07);
       border: 1px solid rgba(94,40,124,0.25);
@@ -1194,7 +1194,7 @@
     </div>
 
     <!-- Content -->
-    <div class="founder-right">
+    <div class="founder-right" style="padding-top: 110px;">
       <div class="reveal" style="margin-bottom:20px; font-size:14.3px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#fff; display:flex; align-items:center;">My Story</div>
 
       <p class="founder-bio reveal reveal-delay-2">
