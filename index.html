@@ -407,7 +407,23 @@
     }
 
     /* ── Problem Section ── */
-    .problem-section { background: #000; }
+    .problem-section { background: #000; position: relative; overflow: hidden; }
+    .problem-paths {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.45;
+    }
+    .problem-paths svg { width: 100%; height: 100%; }
+    .floating-path {
+      stroke: rgba(160,80,220,1);
+      fill: none;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: floatPath linear infinite;
+    }
+    @keyframes floatPath {
+      0%   { stroke-dashoffset: 1200; opacity: 0.2; }
+      50%  { opacity: 0.5; }
+      100% { stroke-dashoffset: -1200; opacity: 0.2; }
+    }
     .problem-grid {
       display: grid; grid-template-columns: 1fr 1fr;
       gap: 80px; align-items: center; max-width: 1200px; margin: 0 auto;
@@ -1016,6 +1032,10 @@
 
 <!-- Problem Section -->
 <section class="problem-section" id="about">
+  <!-- Floating background paths -->
+  <div class="problem-paths" aria-hidden="true">
+    <svg viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" id="floating-paths-svg"></svg>
+  </div>
   <div class="problem-grid">
     <div class="problem-left">
       <div class="section-label reveal">Why CeeJay Social</div>
@@ -1477,6 +1497,28 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
   }, { threshold: 0.1 });
   reveals.forEach(el => obs.observe(el));
+
+  // Floating background paths
+  (function() {
+    const svg = document.getElementById('floating-paths-svg');
+    if (!svg) return;
+    const positions = [1, -1];
+    positions.forEach(function(position) {
+      for (let i = 0; i < 36; i++) {
+        const d = `M${-380 - i * 5 * position} ${-189 + i * 6}C${-380 - i * 5 * position} ${-189 + i * 6} ${-312 - i * 5 * position} ${216 - i * 6} ${152 - i * 5 * position} ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${684 - i * 5 * position} ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`;
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', d);
+        path.setAttribute('stroke-width', String(0.5 + i * 0.03));
+        path.classList.add('floating-path');
+        const duration = (20 + Math.random() * 10).toFixed(1);
+        const delay = (Math.random() * -20).toFixed(1);
+        path.style.animationDuration = duration + 's';
+        path.style.animationDelay = delay + 's';
+        path.style.strokeOpacity = String(0.08 + i * 0.018);
+        svg.appendChild(path);
+      }
+    });
+  })();
 
   // Handwriting circle animation
   const circleEl = document.querySelector('.handwriting-circle');
