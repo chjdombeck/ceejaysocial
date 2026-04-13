@@ -111,20 +111,34 @@
     .nav-links a:hover::after { transform: scaleX(1); }
     .nav-cta {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 22px; border-radius: 6px;
-      background: var(--purple);
+      padding: 10px 22px; border-radius: 100px;
+      background: rgba(255,255,255,0.08);
       color: #fff; font-size: 14px; font-weight: 500;
       text-decoration: none; letter-spacing: -0.01em;
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-      box-shadow: 0 0 0 rgba(94,40,124,0);
+      border: 1px solid rgba(255,255,255,0.18);
+      transition: transform 0.25s cubic-bezier(0.1,0.4,0.2,1), box-shadow 0.25s cubic-bezier(0.1,0.4,0.2,1), background 0.25s ease;
+      box-shadow:
+        0 0 6px rgba(0,0,0,0.03),
+        0 2px 6px rgba(0,0,0,0.12),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.25),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.1),
+        inset 0 0 6px 6px rgba(255,255,255,0.04),
+        0 0 12px rgba(140,80,200,0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
     .nav-cta:hover {
-      background: var(--purple-light);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 32px rgba(94,40,124,0.4);
+      background: rgba(255,255,255,0.13);
+      transform: scale(1.04);
+      box-shadow:
+        0 0 8px rgba(0,0,0,0.05),
+        0 4px 12px rgba(0,0,0,0.15),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.3),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.12),
+        inset 0 0 6px 6px rgba(255,255,255,0.06),
+        0 0 20px rgba(140,80,200,0.2);
     }
-    .nav-cta:active { transform: translateY(0); }
+    .nav-cta:active { transform: scale(0.98); }
 
     /* ── Hero ── */
     .hero {
@@ -243,38 +257,73 @@
     }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 32px; border-radius: 8px;
-      background: var(--purple);
+      padding: 14px 32px; border-radius: 100px;
+      background: rgba(140,60,190,0.25);
       color: #fff; font-size: 15px; font-weight: 600;
       text-decoration: none; letter-spacing: -0.01em;
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-      box-shadow: 0 4px 24px rgba(94,40,124,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+      border: 1px solid rgba(180,100,240,0.35);
+      transition: transform 0.25s cubic-bezier(0.1,0.4,0.2,1), box-shadow 0.25s cubic-bezier(0.1,0.4,0.2,1), background 0.25s ease;
+      box-shadow:
+        0 0 6px rgba(0,0,0,0.03),
+        0 2px 8px rgba(0,0,0,0.15),
+        inset 3px 3px 0.5px -3px rgba(255,255,255,0.5),
+        inset -3px -3px 0.5px -3px rgba(255,255,255,0.2),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.4),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.15),
+        inset 0 0 6px 6px rgba(255,255,255,0.06),
+        inset 0 0 2px 2px rgba(255,255,255,0.04),
+        0 0 20px rgba(140,60,190,0.25);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       cursor: none;
     }
     .btn-primary:hover {
-      background: var(--purple-light);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(94,40,124,0.5), inset 0 1px 0 rgba(255,255,255,0.15);
+      background: rgba(160,80,210,0.32);
+      transform: scale(1.05);
+      box-shadow:
+        0 0 8px rgba(0,0,0,0.05),
+        0 4px 16px rgba(0,0,0,0.18),
+        inset 3px 3px 0.5px -3px rgba(255,255,255,0.55),
+        inset -3px -3px 0.5px -3px rgba(255,255,255,0.25),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.45),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.2),
+        inset 0 0 6px 6px rgba(255,255,255,0.08),
+        0 0 32px rgba(140,60,190,0.4);
     }
-    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:active { transform: scale(0.97); }
     .btn-primary svg { transition: transform 0.2s ease; }
     .btn-primary:hover svg { transform: translateX(3px); }
 
     .btn-ghost {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; border-radius: 8px;
-      background: transparent;
-      color: rgba(255,255,255,0.7); font-size: 15px; font-weight: 500;
+      padding: 14px 28px; border-radius: 100px;
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.75); font-size: 15px; font-weight: 500;
       text-decoration: none; letter-spacing: -0.01em;
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: transform 0.25s cubic-bezier(0.1,0.4,0.2,1), box-shadow 0.25s cubic-bezier(0.1,0.4,0.2,1), background 0.25s ease, color 0.2s ease;
+      box-shadow:
+        0 0 6px rgba(0,0,0,0.03),
+        0 2px 6px rgba(0,0,0,0.1),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.2),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.08),
+        inset 0 0 6px 6px rgba(255,255,255,0.03);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       cursor: none;
     }
     .btn-ghost:hover {
-      color: #fff; border-color: rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.04);
+      color: #fff;
+      background: rgba(255,255,255,0.09);
+      transform: scale(1.04);
+      box-shadow:
+        0 0 8px rgba(0,0,0,0.05),
+        0 4px 12px rgba(0,0,0,0.12),
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.28),
+        inset -1px -1px 1px -0.5px rgba(255,255,255,0.12),
+        inset 0 0 6px 6px rgba(255,255,255,0.05);
     }
+    .btn-ghost:active { transform: scale(0.98); }
 
     .hero-proof {
       margin-top: 64px;
@@ -757,10 +806,16 @@
     .mobile-menu a:hover { color: #fff; }
     .mobile-menu .mobile-cta {
       margin-top: 16px;
-      padding: 16px 40px; border-radius: 8px;
-      background: var(--purple); color: #fff;
+      padding: 16px 40px; border-radius: 100px;
+      background: rgba(140,60,190,0.25); color: #fff;
       font-size: 16px; font-weight: 600;
-      border: 1px solid rgba(255,255,255,0.12);
+      border: 1px solid rgba(180,100,240,0.35);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow:
+        inset 1px 1px 1px -0.5px rgba(255,255,255,0.4),
+        inset 0 0 6px 6px rgba(255,255,255,0.06),
+        0 0 20px rgba(140,60,190,0.25);
     }
 
     /* ── Responsive ── */
@@ -831,6 +886,18 @@
   </style>
 </head>
 <body>
+<!-- Liquid glass SVG filter -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="liquid-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence"/>
+      <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise"/>
+      <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur"/>
+      <feComposite in="finalBlur" in2="finalBlur" operator="over"/>
+    </filter>
+  </defs>
+</svg>
 
 <!-- Custom Cursor -->
 <div id="cursor"></div>
