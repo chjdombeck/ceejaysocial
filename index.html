@@ -574,7 +574,7 @@
 
     /* ── Case Studies ── */
     .case-study { max-width: 1100px; margin: 0 auto 120px; }
-    .case-study-head { text-align: center; margin-bottom: 44px; }
+    .case-study-head { text-align: left; margin-bottom: 44px; }
     .case-study-eyebrow {
       font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
       color: var(--purple-light); margin-bottom: 14px;
@@ -625,12 +625,12 @@
     }
     .case-study-highlight-label { font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 0.02em; }
     .case-study-quote-row {
-      display: flex; align-items: center; justify-content: center; gap: 16px;
-      margin-top: 44px; text-align: center; flex-direction: column;
+      display: flex; align-items: flex-start; justify-content: flex-start; gap: 16px;
+      margin-top: 44px; text-align: left; flex-direction: column;
     }
     .case-study-quote {
       font-size: 18px; line-height: 1.6; font-weight: 400;
-      color: rgba(255,255,255,0.8); max-width: 640px; font-style: normal;
+      color: rgba(255,255,255,0.8); max-width: 680px; font-style: normal;
     }
     .testimonial-avatar {
       width: 40px; height: 40px; border-radius: 50%;
@@ -1241,18 +1241,18 @@
 <section class="results-section" id="results">
   <div class="results-inner">
     <div class="results-header">
-      <div class="section-label reveal" style="justify-content:center;">Proof</div>
-      <h2 class="section-headline reveal reveal-delay-1" style="margin:0 auto; text-align:center;">Real results for real clients</h2>
+      <div class="section-label reveal" style="justify-content:center;">Results</div>
+      <h2 class="section-headline reveal reveal-delay-1" style="margin:0 auto; text-align:center;">Real Results for Real Clients</h2>
     </div>
 
     <!-- Case Study: Painting By Jen -->
-    <div class="case-study reveal" style="margin-top:80px;">
-      <div class="case-study-head">
+    <div class="case-study reveal" style="margin-top:80px; text-align:left;">
+      <div class="case-study-head" style="text-align:left;">
         <div class="case-study-eyebrow">Client Testimonial</div>
         <h3 class="case-study-name">Painting By Jen</h3>
         <div class="case-study-tag">Paid Ads · Lead Generation</div>
       </div>
-      <div class="reveal" style="position:relative; display:inline-block; margin:0 auto 48px; text-align:center; width:100%;">
+      <div class="reveal" style="position:relative; display:inline-block; margin:0 0 48px; text-align:center;">
         <span style="position:relative; display:inline-block; font-size:15.6px; letter-spacing:0.08em; text-transform:uppercase; color:#fff; text-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 40px rgba(180,120,255,0.4); z-index:1;">In 5 months of working with Painting By Jen</span>
         <svg class="handwriting-circle" viewBox="0 0 520 80" xmlns="http://www.w3.org/2000/svg" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:130%; height:420%; pointer-events:none; overflow:visible;">
           <path class="handwriting-path"
@@ -1315,26 +1315,26 @@
       </div>
       <div class="case-study-highlights">
         <div class="case-study-highlight reveal">
-          <span class="case-study-highlight-num">100%</span>
-          <div class="case-study-highlight-label">Custom Built</div>
+          <span class="case-study-highlight-num">Full</span>
+          <div class="case-study-highlight-label">Website Overhaul</div>
         </div>
         <div class="case-study-highlight reveal reveal-delay-1">
           <span class="case-study-highlight-num">Mobile</span>
-          <div class="case-study-highlight-label">Fully Responsive</div>
+          <div class="case-study-highlight-label">Mobile Friendly</div>
         </div>
         <div class="case-study-highlight reveal reveal-delay-2">
-          <span class="case-study-highlight-num">Live</span>
-          <div class="case-study-highlight-label">Launched & Active</div>
+          <span class="case-study-highlight-num">&lt;2 Weeks</span>
+          <div class="case-study-highlight-label">Launch Turnaround</div>
         </div>
       </div>
       <div class="case-study-quote-row reveal">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="case-study-quote">"Carter built us a site that finally looks as professional as our business is. Clean, fast, and exactly what we needed."</p>
+        <p class="case-study-quote">"Carter has been an absolute pleasure to work with. From the beginning, he brought fresh, creative ideas to the table while taking the time to truly understand our business and goals. He transformed our website into something we're genuinely proud of and made the entire process feel collaborative and stress-free."</p>
       </div>
     </div>
 
     <div class="section-label reveal" style="justify-content:center; margin-top:80px; margin-bottom:0;">
-      <span>What Our Clients Say</span>
+      <span>Other Client Reviews</span>
     </div>
     <div class="testimonials-grid" style="grid-template-columns: repeat(2, 1fr);">
       <div class="testimonial-card reveal">
