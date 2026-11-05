@@ -1,6 +1,6 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const puppeteer = require('C:/Users/chjdo/Documents/Test 1 Website Building Claude/node_modules/puppeteer/lib/cjs/puppeteer/puppeteer.js');
+const puppeteer = require('C:/Users/chjdo/OneDrive/Documents/Test 1 Website Building Claude/node_modules/puppeteer/lib/cjs/puppeteer/puppeteer.js');
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';

@@ -547,8 +547,8 @@
     .results-stat-label { font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 0.02em; }
 
     .testimonials-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 20px; max-width: 1200px; margin: 64px auto 0;
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 20px; max-width: 900px; margin: 64px auto 0;
     }
     .testimonial-card {
       padding: 36px;
@@ -571,6 +571,67 @@
       font-weight: 400; flex: 1;
     }
     .testimonial-author { display: flex; align-items: center; gap: 12px; }
+
+    /* ── Case Studies ── */
+    .case-study { max-width: 1100px; margin: 0 auto 120px; }
+    .case-study-head { text-align: center; margin-bottom: 44px; }
+    .case-study-eyebrow {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--purple-light); margin-bottom: 14px;
+    }
+    .case-study-name {
+      font-size: clamp(28px, 3.6vw, 42px); font-weight: 700;
+      letter-spacing: -0.03em; color: #fff; margin-bottom: 10px;
+    }
+    .case-study-tag {
+      font-size: 12.5px; font-weight: 600; letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.4);
+    }
+    .case-study-divider {
+      width: 100%; max-width: 1100px; height: 1px; margin: 0 auto 120px;
+      background: linear-gradient(90deg, transparent, rgba(94,40,124,0.4), transparent);
+    }
+    .browser-mockup {
+      border-radius: 14px; overflow: hidden;
+      border: 1px solid rgba(94,40,124,0.3);
+      background: #0A0A0A;
+      box-shadow: 0 30px 70px -20px rgba(94,40,124,0.45), 0 10px 30px -10px rgba(0,0,0,0.6);
+    }
+    .browser-mockup-bar {
+      display: flex; align-items: center; gap: 6px;
+      padding: 12px 16px; background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .browser-mockup-bar span {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+    }
+    .browser-mockup img { width: 100%; display: block; }
+    .case-study-highlights {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px; overflow: hidden;
+      background: rgba(255,255,255,0.07);
+      margin-top: 40px;
+    }
+    .case-study-highlight {
+      padding: 32px 24px; background: #0A0A0A; text-align: center;
+      transition: background 0.2s ease;
+    }
+    .case-study-highlight:hover { background: rgba(94,40,124,0.06); }
+    .case-study-highlight-num {
+      font-size: clamp(24px, 3vw, 32px); font-weight: 700; letter-spacing: -0.02em;
+      color: #fff; display: block; margin-bottom: 6px;
+    }
+    .case-study-highlight-label { font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 0.02em; }
+    .case-study-quote-row {
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      margin-top: 44px; text-align: center; flex-direction: column;
+    }
+    .case-study-quote {
+      font-size: 18px; line-height: 1.6; font-weight: 400;
+      color: rgba(255,255,255,0.8); max-width: 640px; font-style: normal;
+    }
     .testimonial-avatar {
       width: 40px; height: 40px; border-radius: 50%;
       background: linear-gradient(135deg, var(--purple), #000);
@@ -1180,67 +1241,103 @@
 <section class="results-section" id="results">
   <div class="results-inner">
     <div class="results-header">
-      <div class="section-label reveal">Proof</div>
-      <h2 class="section-headline reveal reveal-delay-1" style="margin:0 auto; text-align:center;">Numbers that speak for themselves</h2>
+      <div class="section-label reveal" style="justify-content:center;">Proof</div>
+      <h2 class="section-headline reveal reveal-delay-1" style="margin:0 auto; text-align:center;">Real results for real clients</h2>
     </div>
-    <div class="reveal" style="position:relative; display:inline-block; margin:0 auto 48px; text-align:center; width:100%;">
-      <span style="position:relative; display:inline-block; font-size:15.6px; letter-spacing:0.08em; text-transform:uppercase; color:#fff; text-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 40px rgba(180,120,255,0.4); z-index:1;">In 5 months of working with Painting By Jen</span>
-      <svg class="handwriting-circle" viewBox="0 0 520 80" xmlns="http://www.w3.org/2000/svg" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:130%; height:420%; pointer-events:none; overflow:visible;">
-        <path class="handwriting-path"
-          d="M 460 20
-             C 560 50, 510 70, 260 72
-             C 60 72, 10 55, 10 40
-             C 10 25, 80 8, 260 8
-             C 440 8, 490 28, 460 20"
-          fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+
+    <!-- Case Study: Painting By Jen -->
+    <div class="case-study reveal" style="margin-top:80px;">
+      <div class="case-study-head">
+        <div class="case-study-eyebrow">Client Testimonial</div>
+        <h3 class="case-study-name">Painting By Jen</h3>
+        <div class="case-study-tag">Paid Ads · Lead Generation</div>
+      </div>
+      <div class="reveal" style="position:relative; display:inline-block; margin:0 auto 48px; text-align:center; width:100%;">
+        <span style="position:relative; display:inline-block; font-size:15.6px; letter-spacing:0.08em; text-transform:uppercase; color:#fff; text-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 40px rgba(180,120,255,0.4); z-index:1;">In 5 months of working with Painting By Jen</span>
+        <svg class="handwriting-circle" viewBox="0 0 520 80" xmlns="http://www.w3.org/2000/svg" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:130%; height:420%; pointer-events:none; overflow:visible;">
+          <path class="handwriting-path"
+            d="M 460 20
+               C 560 50, 510 70, 260 72
+               C 60 72, 10 55, 10 40
+               C 10 25, 80 8, 260 8
+               C 440 8, 490 28, 460 20"
+            fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <style>
+        .handwriting-path {
+          stroke-dasharray: 1400;
+          stroke-dashoffset: 1400;
+        }
+        .handwriting-circle.animate .handwriting-path {
+          animation: drawCircle 2.5s cubic-bezier(0.43,0.13,0.23,0.96) forwards;
+        }
+        @keyframes drawCircle {
+          to { stroke-dashoffset: 0; }
+        }
+      </style>
+      <div class="results-stats">
+        <div class="results-stat reveal">
+          <span class="results-stat-num">12×</span>
+          <div class="results-stat-label">Return on Ad Spend</div>
+        </div>
+        <div class="results-stat reveal reveal-delay-1">
+          <span class="results-stat-num">$92,316</span>
+          <div class="results-stat-label">Revenue Generated</div>
+        </div>
+        <div class="results-stat reveal reveal-delay-2">
+          <span class="results-stat-num">89</span>
+          <div class="results-stat-label">Estimate Appointments Booked</div>
+        </div>
+        <div class="results-stat reveal reveal-delay-3">
+          <span class="results-stat-num">18</span>
+          <div class="results-stat-label">Appointments Per Month</div>
+        </div>
+      </div>
+      <div class="case-study-quote-row reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="case-study-quote">"It was like a weight lifted off my shoulders having appointments booked for me without effort."</p>
+      </div>
     </div>
-    <style>
-      .handwriting-path {
-        stroke-dasharray: 1400;
-        stroke-dashoffset: 1400;
-      }
-      .handwriting-circle.animate .handwriting-path {
-        animation: drawCircle 2.5s cubic-bezier(0.43,0.13,0.23,0.96) forwards;
-      }
-      @keyframes drawCircle {
-        to { stroke-dashoffset: 0; }
-      }
-    </style>
-    <div class="results-stats">
-      <div class="results-stat reveal">
-        <span class="results-stat-num">12×</span>
-        <div class="results-stat-label">Return on Ad Spend</div>
+
+    <div class="case-study-divider"></div>
+
+    <!-- Case Study: Vital Vending Sales -->
+    <div class="case-study reveal">
+      <div class="case-study-head">
+        <div class="case-study-eyebrow">Client Testimonial</div>
+        <h3 class="case-study-name">Vital Vending Sales</h3>
+        <div class="case-study-tag">Website Design</div>
       </div>
-      <div class="results-stat reveal reveal-delay-1">
-        <span class="results-stat-num">$92,316</span>
-        <div class="results-stat-label">Revenue Generated</div>
+      <div class="browser-mockup">
+        <div class="browser-mockup-bar"><span></span><span></span><span></span></div>
+        <img src="vvs-site-screenshot.png" alt="Vital Vending Sales website, designed by CeeJay Social">
       </div>
-      <div class="results-stat reveal reveal-delay-2">
-        <span class="results-stat-num">89</span>
-        <div class="results-stat-label">Estimate Appointments Booked</div>
+      <div class="case-study-highlights">
+        <div class="case-study-highlight reveal">
+          <span class="case-study-highlight-num">100%</span>
+          <div class="case-study-highlight-label">Custom Built</div>
+        </div>
+        <div class="case-study-highlight reveal reveal-delay-1">
+          <span class="case-study-highlight-num">Mobile</span>
+          <div class="case-study-highlight-label">Fully Responsive</div>
+        </div>
+        <div class="case-study-highlight reveal reveal-delay-2">
+          <span class="case-study-highlight-num">Live</span>
+          <div class="case-study-highlight-label">Launched & Active</div>
+        </div>
       </div>
-      <div class="results-stat reveal reveal-delay-3">
-        <span class="results-stat-num">18</span>
-        <div class="results-stat-label">Appointments Per Month</div>
+      <div class="case-study-quote-row reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="case-study-quote">"Carter built us a site that finally looks as professional as our business is. Clean, fast, and exactly what we needed."</p>
       </div>
     </div>
+
     <div class="section-label reveal" style="justify-content:center; margin-top:80px; margin-bottom:0;">
       <span>What Our Clients Say</span>
     </div>
-    <div class="testimonials-grid">
+    <div class="testimonials-grid" style="grid-template-columns: repeat(2, 1fr);">
       <div class="testimonial-card reveal">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-quote">"It was like a weight lifted off my shoulders having appointments booked for me without effort."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">PJ</div>
-          <div>
-            <div class="testimonial-name">Painting By Jen</div>
-            <div class="testimonial-role">Des Moines, IA</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal reveal-delay-1">
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-quote">"The execution was seamless and extremely professional."</p>
         <div class="testimonial-author">
@@ -1251,7 +1348,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-2">
+      <div class="testimonial-card reveal reveal-delay-1">
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-quote">"Working with Carter was a very enjoyable experience. He is a genuine person with no ulterior motives or gimmicks when it comes to doing business. He is very trustworthy."</p>
         <div class="testimonial-author">
