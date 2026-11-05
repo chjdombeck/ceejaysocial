@@ -631,7 +631,8 @@
       transition: color 0.2s ease;
     }
     .browser-mockup:hover .browser-mockup-bar-link { color: var(--purple-light); }
-    .browser-mockup img { width: 100%; display: block; }
+    .browser-mockup-img-wrap { overflow: hidden; height: clamp(220px, 28vw, 340px); }
+    .browser-mockup img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top; }
     .case-study-highlights {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; border: 1px solid rgba(255,255,255,0.07);
@@ -1319,7 +1320,9 @@
           <div class="browser-mockup-bar-dots"><span></span><span></span><span></span></div>
           <div class="browser-mockup-bar-link">vitalvendingsales.com ↗</div>
         </div>
-        <img src="vvs-site-screenshot.png" alt="Vital Vending Sales website, designed by CeeJay Social">
+        <div class="browser-mockup-img-wrap">
+          <img src="vvs-site-screenshot.png" alt="Vital Vending Sales website, designed by CeeJay Social">
+        </div>
       </a>
       <div class="case-study-highlights">
         <div class="case-study-highlight reveal">
