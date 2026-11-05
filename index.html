@@ -524,7 +524,7 @@
     .results-header .section-label { justify-content: center; }
     .results-header .section-label::before { display: none; }
     .results-stats {
-      display: grid; grid-template-columns: repeat(4, 1fr);
+      display: grid; grid-template-columns: repeat(5, 1fr);
       gap: 1px;
       border: 1px solid rgba(255,255,255,0.07);
       border-radius: 16px; overflow: hidden;
@@ -576,8 +576,18 @@
     .case-study { max-width: 1100px; margin: 0 auto 120px; }
     .case-study-head { text-align: left; margin-bottom: 44px; }
     .case-study-eyebrow {
-      font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--purple-light); margin-bottom: 14px;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: #fff; margin-bottom: 18px;
+      padding: 8px 18px; border-radius: 999px;
+      background: linear-gradient(135deg, rgba(168,85,247,0.28), rgba(94,40,124,0.22));
+      border: 1px solid rgba(168,85,247,0.45);
+      box-shadow: 0 0 24px rgba(168,85,247,0.25), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .case-study-eyebrow::before {
+      content: ''; width: 6px; height: 6px; border-radius: 50%;
+      background: var(--purple-light); flex-shrink: 0;
+      box-shadow: 0 0 8px var(--purple-light);
     }
     .case-study-name {
       font-size: clamp(28px, 3.6vw, 42px); font-weight: 700;
@@ -1267,44 +1277,24 @@
         <h3 class="case-study-name">Painting By Jen</h3>
         <div class="case-study-tag">Paid Ads · Lead Generation</div>
       </div>
-      <div class="reveal" style="position:relative; display:inline-block; margin:0 0 48px; text-align:center;">
-        <span style="position:relative; display:inline-block; font-size:15.6px; letter-spacing:0.08em; text-transform:uppercase; color:#fff; text-shadow: 0 0 18px rgba(255,255,255,0.6), 0 0 40px rgba(180,120,255,0.4); z-index:1;">In 5 months of working with Painting By Jen</span>
-        <svg class="handwriting-circle" viewBox="0 0 520 80" xmlns="http://www.w3.org/2000/svg" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:130%; height:420%; pointer-events:none; overflow:visible;">
-          <path class="handwriting-path"
-            d="M 460 20
-               C 560 50, 510 70, 260 72
-               C 60 72, 10 55, 10 40
-               C 10 25, 80 8, 260 8
-               C 440 8, 490 28, 460 20"
-            fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <style>
-        .handwriting-path {
-          stroke-dasharray: 1400;
-          stroke-dashoffset: 1400;
-        }
-        .handwriting-circle.animate .handwriting-path {
-          animation: drawCircle 2.5s cubic-bezier(0.43,0.13,0.23,0.96) forwards;
-        }
-        @keyframes drawCircle {
-          to { stroke-dashoffset: 0; }
-        }
-      </style>
       <div class="results-stats">
         <div class="results-stat reveal">
+          <span class="results-stat-num">5</span>
+          <div class="results-stat-label">Months of Partnership</div>
+        </div>
+        <div class="results-stat reveal reveal-delay-1">
           <span class="results-stat-num">12×</span>
           <div class="results-stat-label">Return on Ad Spend</div>
         </div>
-        <div class="results-stat reveal reveal-delay-1">
+        <div class="results-stat reveal reveal-delay-2">
           <span class="results-stat-num">$92,316</span>
           <div class="results-stat-label">Revenue Generated</div>
         </div>
-        <div class="results-stat reveal reveal-delay-2">
+        <div class="results-stat reveal reveal-delay-3">
           <span class="results-stat-num">89</span>
           <div class="results-stat-label">Estimate Appointments Booked</div>
         </div>
-        <div class="results-stat reveal reveal-delay-3">
+        <div class="results-stat reveal reveal-delay-4">
           <span class="results-stat-num">18</span>
           <div class="results-stat-label">Appointments Per Month</div>
         </div>
@@ -1341,7 +1331,7 @@
           <div class="case-study-highlight-label">Mobile Friendly</div>
         </div>
         <div class="case-study-highlight reveal reveal-delay-2">
-          <span class="case-study-highlight-num">&lt;2 Weeks</span>
+          <span class="case-study-highlight-num">14 Days</span>
           <div class="case-study-highlight-label">Launch Turnaround</div>
         </div>
       </div>
