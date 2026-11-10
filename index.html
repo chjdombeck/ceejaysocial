@@ -599,7 +599,7 @@
     }
     .case-study-logo-badge {
       flex-shrink: 0; width: 120px; height: 90px;
-      background: #fff; border-radius: 16px;
+      background: #fff; border-radius: 16px; overflow: hidden;
       display: flex; align-items: center; justify-content: center;
       padding: 14px;
       box-shadow: 0 20px 40px -12px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06);
@@ -1284,10 +1284,15 @@
 
     <!-- Case Study: Painting By Jen -->
     <div class="case-study reveal" style="margin-top:80px; text-align:left;">
-      <div class="case-study-head" style="text-align:left;">
-        <div class="case-study-eyebrow">Client Testimonial</div>
-        <h3 class="case-study-name">Painting By Jen</h3>
-        <div class="case-study-tag">Paid Ads · Lead Generation</div>
+      <div class="case-study-head" style="display:flex; align-items:flex-start; justify-content:space-between; gap:24px; text-align:left;">
+        <div>
+          <div class="case-study-eyebrow">Client Testimonial</div>
+          <h3 class="case-study-name">Painting By Jen</h3>
+          <div class="case-study-tag">Paid Ads · Lead Generation</div>
+        </div>
+        <div class="case-study-logo-badge">
+          <img src="pbj-logo.png" alt="Painting By Jen logo" style="transform: scale(1.55);">
+        </div>
       </div>
       <div class="results-stats">
         <div class="results-stat reveal">
